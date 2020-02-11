@@ -6,13 +6,13 @@
 #include <boost/python/module.hpp>
 #include <boost/python/def.hpp>
 
-char const* greet()
+char const* greet()     // greet函数定义
 {
    return "hello, world";
 }
 
-BOOST_PYTHON_MODULE(hello_ext)
+BOOST_PYTHON_MODULE(hello_ext)  // 指示要扩展的python模块名为"hello_ext"
 {
     using namespace boost::python;
-    def("greet", greet);
+    def("greet", greet);        // 将greet函数导出到python, 并且在python中函数名也叫"greet"
 }
