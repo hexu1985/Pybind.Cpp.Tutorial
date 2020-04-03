@@ -47,3 +47,11 @@ $ python
 ```
 $ python test_hello.py
 ```
+
+4. 通过CMake编译程序
+```
+mkdir build
+cmake -H. -Bbuild
+cmake --build build
+```
+
