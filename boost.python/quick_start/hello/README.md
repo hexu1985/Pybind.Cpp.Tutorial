@@ -1,4 +1,5 @@
 ## Hello World
+
 Following C/C++ tradition, let's start with the "hello, world". A C++ Function:
 
 ```
@@ -30,12 +31,14 @@ That's it. We're done. We can now build this as a shared library. The resulting 
 
 编译并测试程序
 1. 编译hello_ext.so
+
 ```
 $ make
 # 如果想要生成python2的module, 需要修改Makefile中的INCLUDES和LDFLAGS  
 ```
 
 2. 调用hello_ext
+
 ```
 $ python
 >>> import hello_ext
@@ -44,11 +47,13 @@ $ python
 ```
 
 3. 通过脚本调用hello_ext
+
 ```
 $ python test_hello.py
 ```
 
 4. 通过CMake编译程序
+
 ```
 mkdir build
 cmake -H. -Bbuild

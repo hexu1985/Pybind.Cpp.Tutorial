@@ -13,3 +13,6 @@ https://www.boost.org/
 
 ### [QuickStart](quick_start/)
 - [Hello World](quick_start/hello/)
+
+### [Exposing Classes](exposing_classes/)
+- [Expose Classes](exposing_classes/expose_class/)
