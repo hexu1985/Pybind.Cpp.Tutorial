@@ -9,15 +9,15 @@ char const* greet()
 }
 ```
 
-can be exposed to Python by writing a Boost.Python wrapper:
+can be exposed to Python by writing a pybind11 wrapper:
 
 ```
-#include <boost/python.hpp>
+#include <pybind11/pybind11.h>
 
-BOOST_PYTHON_MODULE(hello_ext)
+PYBIND11_MODULE(hello_ext, m)
 {
-    using namespace boost::python;
-    def("greet", greet);
+    m.doc() = "pybind11 example hello_ext";
+    m.def("greet", greet, "A function which print \"hello, world\"");
 }
 ```
 
@@ -34,7 +34,7 @@ hello, world
 
 ```
 $ make
-# 如果想要生成python2的module, 需要修改Makefile中的INCLUDES和LDFLAGS  
+# 如果想要生成python2的module, 需要修改Makefile中的INCLUDES
 ```
 
 2. 调用hello_ext

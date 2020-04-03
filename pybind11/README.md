@@ -8,5 +8,10 @@
 ## 参考文档:
 pybind11官方文档: https://pybind11.readthedocs.io/en/master/
 
-## 目录结构
-参考boost.python的目录结构
+## Table of contents
+
+### [QuickStart](quick_start/)
+- [Hello World](quick_start/hello/)
+
+### [Exposing Classes](exposing_classes/)
+- [Expose Classes](exposing_classes/expose_class/)
