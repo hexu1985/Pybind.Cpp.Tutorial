@@ -12,4 +12,4 @@ https://www.boost.org/
 ## Table of contents
 
 ### [QuickStart](quick_start/)
-- [1. Hello World](quick_start/01-hello/)
+- [Hello World](quick_start/hello/)
